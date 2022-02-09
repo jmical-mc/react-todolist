@@ -1,0 +1,32 @@
+{
+	 "mappings": [
+    {
+    "request": {
+        "url": "/todo_items"
+    },
+    "response": {
+        "status": 200,
+        "body": "[{\"id\": 1,\"key\": 1,\"content\": \"first job\",\"done\": true, \"priority\": \"urgent\"}, {\"id\": 2,\"key\": 2,\"content\": \"second job\",\"done\": false, \"priority\": \"high\"}]",
+		"headers": {
+                    "Content-Type": "application/json",
+					    "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Methods" : "*"
+            }
+    }
+	},
+	{
+		"request": {
+        "url": "/todo_items/1"
+    },
+    "response": {
+        "status": 200,
+        "body": "{\"id\": 1,\"key\": 1,\"content\": \"first job\",\"done\": true, \"priority\": \"urgent\"}",
+		"headers": {
+                    "Content-Type": "application/json",
+					    "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Methods" : "*"
+            }
+    }
+	}
+	]
+}
